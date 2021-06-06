@@ -4,6 +4,15 @@ plugins {
 	id 'java'
 }
 
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': '1.0',
+                   'Main-Class': 'com.example.demo.DemoApplication'
+    }
+}
+
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
